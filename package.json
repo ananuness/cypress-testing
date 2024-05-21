@@ -1,0 +1,20 @@
+{
+  "name": "cypress-beginner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "cypress": "npx cypress open --browser electron",
+    "cypress:web": "npx cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "21.6.1"
+  },
+  "devDependencies": {
+    "cypress": "^13.9.0"
+  }
+}
