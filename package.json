@@ -1,11 +1,11 @@
 {
-  "name": "cypress-beginner",
+  "name": "cypress-testing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "cypress": "npx cypress open --browser electron",
+    "cypress": "npx cypress run --browser electron",
     "cypress:web": "npx cypress open"
   },
   "keywords": [],
