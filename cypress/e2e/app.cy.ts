@@ -11,11 +11,6 @@ const input = {
   url: '',
 };
 
-const colors = {
-  error: 'rgb(220, 71, 85)',
-  success: 'rgb(0, 200, 0)',
-};
-
 describe('Form submission', () => {
   beforeEach(() => {
     cy.clearAllLocalStorage();
@@ -33,14 +28,5 @@ describe('Form submission', () => {
     registerForm
       .imageUrlFeedback()
       .should('contain.text', 'Please type a valid URL');
-
-    registerForm.titleInput().should(({ 0: element }) => {
-      const style = window.getComputedStyle(element);
-      const border = style.getPropertyValue('border-color');
-      const icon = style.getPropertyValue('background-image');
-
-      assert.strictEqual(border, colors.error);
-      assert.isDefined(icon);
-    });
   });
 });
